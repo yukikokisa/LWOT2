@@ -1,41 +1,29 @@
-<div class="account-page">
-  <div class="account-page__inner clearfix">
-    <div class="account-page__inner--left account-page__header">
-      <h2>Create Account</h2>
-      <h5>新規アカウントの作成</h5>
-      <%= render "nurses/shared/links" %>
-    </div>
-    <div class="account-page__inner--right user-form">
-      <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-        <%= render "nurses/shared/error_messages", resource: resource %>
-         <div class="field">
-          <%= f.label :氏名 %><br />
-          <%= f.text_field :name, autofocus: true, autocomplete: "name" %>
-        </div>
+class Nurse < ApplicationRecord
+  # Include default devise modules. Others available are:
+  # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
+  devise :database_authenticatable, :registerable,
+         :recoverable, :rememberable, :validatable,
+         authentication_keys: [:employee_number]
 
-        <div class="field">
-          <%= f.label :社員番号 %><br />
-          <%= f.text_field :employee_number, autofocus: true, autocomplete: "employee_number" %>
-        </div>
+  has_many :patient
 
-        <div class="field">
-          <%= f.label :password %>
-          <% if @minimum_password_length %>
-          <em>(<%= @minimum_password_length %> 文字以上の半角英数字)</em>
-          <% end %><br />
-          <%= f.password_field :password, autocomplete: "new-password" %>
-        </div>
+  VALID_PASSWORD_REGEX = /\A[a-z0-9]+\z/i
+  validates :password, format: { with: VALID_PASSWORD_REGEX } 
+  
+  with_options presence: true do
+    validates :name,             length: { maximum: 10 }, format: { with: /\A[ぁ-んァ-ン一-龥]/ }
+    validates :employee_number,  length: { is: 8 }, format: { with: /\A[0-9]+\z/ }
+  end      
 
-        <div class="field">
-          <em><%= f.label :password%> (確認)</em><br />
-          <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
-        </div>
+  def email_required?
+    false
+  end
 
-        <div class="actions">
-          <%= f.submit "Sign up" %>
-        </div>
-        <% end %>
-     </div>
-  </div>
-</div>
-   
+  def email_changed?
+    false
+  end
+
+  def will_save_change_to_email?
+    false
+  end
+end
