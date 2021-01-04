@@ -10,7 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_04_080804) do
+ActiveRecord::Schema.define(version: 2021_01_04_082137) do
+
+  create_table "checkups", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.bigint "patient_id", null: false
+    t.integer "consultation_content_id"
+    t.text "detail"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["patient_id"], name: "index_checkups_on_patient_id"
+  end
+
+  create_table "medical_treatments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.bigint "patient_id", null: false
+    t.integer "treatment_content_id"
+    t.text "text"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["patient_id"], name: "index_medical_treatments_on_patient_id"
+  end
 
   create_table "nurses", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", null: false
@@ -43,4 +61,17 @@ ActiveRecord::Schema.define(version: 2021_01_04_080804) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "symptoms", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.bigint "patient_id", null: false
+    t.date "oneset_time"
+    t.string "body_region"
+    t.text "condition"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["patient_id"], name: "index_symptoms_on_patient_id"
+  end
+
+  add_foreign_key "checkups", "patients"
+  add_foreign_key "medical_treatments", "patients"
+  add_foreign_key "symptoms", "patients"
 end
