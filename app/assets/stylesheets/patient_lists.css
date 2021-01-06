@@ -55,10 +55,7 @@
   margin-left: 1rem;
 }
 
-  label, input[type='checkbox'] {
-    cursor: pointer;
-}
-
-label, input[type='button'] {
+label, input[type='checkbox'] {
   cursor: pointer;
-} 
+}
+ 

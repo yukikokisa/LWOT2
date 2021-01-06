@@ -3,19 +3,17 @@
      <h1>Q.本日、看護師に相談したいことがありますか？</h1>
    </div>
    <div class="questions">
-     <div class="question">
-         <%= link_to questions_path, method: :post, class: "post" do %>
+        <%= link_to questions_path, method: :post, class: "post" do %>
               なし
         <% end %>
         <%= link_to new_checkup_path, class: "post" do %>
               検査のついて
         <% end %>
-          <%= link_to new_symptom_path, class: "post" do %>
+        <%= link_to new_symptom_path, class: "post" do %>
               症状について	             
-          <% end %>
+        <% end %>
         <%= link_to  new_medical_treatment_path, class: "post" do %>
               治療について
         <% end %>
-     </ul>
    </div>
 </div>

@@ -14,30 +14,35 @@
  *= require_self
  */
 
-　* {
+* {
   box-sizing: border-box;	  
 }
 
 /*======================================================*/
 /*webページ全体*/
 /*======================================================*/
-body,
-html {
-  height: 100%;
-  background-color: #fffafa;
+
+html body {
+  background-color: #fafdff;;
   font-family: "Georgia", "游ゴシック", sans-serif;
+}
+
+.wrapper{
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  padding-bottom: 120px;
 }
 
 /*======================================================*/
 /*ヘッダー*/
 /*======================================================*/
 header.header {
-  width: 100%;
   background-color: #000080;
 }
 
 .header_bar.row {
-  height: 100px;
+  height: 90px;
   padding: 10px 40px;
   position: relative;
 }
@@ -78,9 +83,11 @@ header.header {
 /*フッター*/
 /*======================================================*/
 footer {
-  margin: 30px auto;
+  width: 100%;
   padding: 20px;
   background-color: #000080;
+  position: absolute;
+  bottom: 0;
 }
 
 footer p {
@@ -88,3 +95,4 @@ footer p {
   color: #fffafa;
   text-align: center;
 }
+
