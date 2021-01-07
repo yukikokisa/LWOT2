@@ -5,13 +5,12 @@
 .side_bar {
   background-color: #FFFFFF;
   width: 300px;
-  height: 100vh;
+  height: calc(100vh - 100px);
 }
 
 .v_line_fix {
   width: 3px;
-  height: 100vh;
-  background-color: rgb(49, 39, 39);
+  background-color: #696969;
 }
 
 .main {
@@ -24,6 +23,10 @@
 }
 
 .date {
+  font-size: 20px;
+}
+
+.time {
   font-size: 20px;
 }
 
@@ -44,7 +47,7 @@
 }
 .title-border:before,
 .title-border:after {
-  border-top: 1px solid;
+  border-top: 3px solid #696969;
   content: "";
   flex-grow: 1;
 }
@@ -58,4 +61,6 @@
 label, input[type='checkbox'] {
   cursor: pointer;
 }
+
+
  
