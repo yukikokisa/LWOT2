@@ -1,19 +1,31 @@
-<div class="contents">
+ <div class="question_contents">
+  <div class="question_content"> 
 　　<div class="title">
      <h1>Q.本日、看護師に相談したいことがありますか？</h1>
    </div>
    <div class="questions">
-        <%= link_to questions_path, method: :post, class: "post" do %>
-              なし
+     <div class="question_items">
+       <div class="question_item">
+        <%= link_to questions_path, method: :post, class: "question_item" do %>
+            なし
         <% end %>
-        <%= link_to new_checkup_path, class: "post" do %>
-              検査のついて
+       </div>
+       <div class="question_item">
+        <%= link_to new_checkup_path, class: "question_item" do %>
+            検査のついて
         <% end %>
-        <%= link_to new_symptom_path, class: "post" do %>
-              症状について	             
+       </div>
+       <div class="question_item">
+        <%= link_to new_symptom_path, class: "question_item" do %>
+            症状について	             
         <% end %>
-        <%= link_to  new_medical_treatment_path, class: "post" do %>
-              治療について
+       </div>
+       <div class="question_item">
+        <%= link_to  new_medical_treatment_path, class: "question_item" do %>
+            治療について
         <% end %>
+       </div>
+   　</div>
    </div>
-</div>
+  </div>
+ </div>

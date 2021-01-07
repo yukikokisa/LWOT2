@@ -23,15 +23,13 @@
 /*======================================================*/
 
 html body {
-  background-color: #fafdff;;
+  background-color: #fafdff;
   font-family: "Georgia", "游ゴシック", sans-serif;
 }
 
 .wrapper{
   min-height: 100vh;
   width: 100%;
-  position: relative;
-  padding-bottom: 120px;
 }
 
 /*======================================================*/
@@ -78,6 +76,11 @@ header.header {
   text-align: center;
   text-decoration: none;
 }
+
+/*======================================================*/
+/*ボディー*/
+/*======================================================*/
+
 
 /*======================================================*/
 /*フッター*/

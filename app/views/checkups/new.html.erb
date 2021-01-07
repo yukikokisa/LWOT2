@@ -1,19 +1,29 @@
-<%= stylesheet_link_tag "checkups", :media => "all" %>
-<div class="checkup_contents">  
-  <div class="checkup_content_title">
-    <center>相談したい内容にチェックを入れてください。</center>
+<div class="medical_contents">  
+  <div class="medical_content">  
+   <div class="medical_content_title">
+    <h2>kennsaのどんなことを相談したいですか？</h2>
   </div>
-  <div class="checkup_content">
+  <div class="medical_items">
    <%= form_with model: @checkup, local: true do |f| %>
-     <div class = "consultation_content">
-        <%= f.collection_select(:consultation_content_id, ConsultationContent.all, :id, :name, {}, {class:"consultation_content_id"}) %>
+     <div class = "item-1">
+     　 <div class="i_line_fix">相談内容</div> 
+        <div class="field">
+          <%= f.collection_select(:consultation_content_id, ConsultationContent.all, :id, :name, {}, {class:"consultation_content_id"}) %>
+        </div> 
      </div>
-     <div class = "detail">
-        <%= f.text_area :detail, class:"detail", placeholder:"詳細" %>
+     <div class = "item-2">
+        <div class="i_line_fix">相談内容</div> 
+        <div class="field">
+          <%= f.text_area :detail, size: "40x10", class:"detail", placeholder:"詳細" %>
+        </div>     
      </div>
      <div class="checkup_content-submit">
-        <%= f.submit "投稿する" , class:"btn" %>
-     </div>
+        <%= button_tag type: "submit", class: "btn btn-default btn-s-md" do %>
+            <i class="fas fa-user-nurse fa-3x"></i>
+            <i class="fas fa-paper-plane fa-3x"></i>
+        <% end %>
+      </div>
    <% end %>
   </div>
+ </div>  
 </div>   
