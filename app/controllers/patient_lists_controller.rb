@@ -3,6 +3,8 @@ class PatientListsController < ApplicationController
     wd = ["日", "月", "火", "水", "木", "金", "土"]
     time = Time.now
     @date = time.strftime("%Y/%m/%d(#{wd[time.wday]})")
+    ampm = time.hour < 12 ? "AM" : "PM"
+    @time =time.strftime("#{ampm} %I:%M")
     @patient_list = PatientList.new
     @patients = Patient.all.order(:name)
   end

@@ -1,6 +1,7 @@
+<%= stylesheet_link_tag "checkups", :media => "all" %>
 <div class="checkup_contents">  
   <div class="checkup_content_title">
-    <h2>相談したい内容にチェックを入れてください。</h2>
+    <center>相談したい内容にチェックを入れてください。</center>
   </div>
   <div class="checkup_content">
    <%= form_with model: @checkup, local: true do |f| %>
