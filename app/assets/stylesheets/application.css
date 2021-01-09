@@ -59,7 +59,7 @@ header.header {
 
 .user_nav.grid-1 {
   float: right;
-  padding-top: 10px;
+  padding-top: 5px;
 }
 
 .post {
@@ -75,6 +75,23 @@ header.header {
   display: inline-block;
   text-align: center;
   text-decoration: none;
+  position: relative;
+}
+
+.login_patient_name {
+  display: flex;
+  position: absolute;
+  color: #fafdff;
+  align-items: flex-end;
+  padding-left: 18px;
+}
+
+.login_nurse_name {
+  display: flex;
+  position: absolute;
+  color: #fafdff;
+  align-items: flex-end;
+  padding-left: 150px;
 }
 
 /*======================================================*/

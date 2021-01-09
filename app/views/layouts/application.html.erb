@@ -15,17 +15,23 @@
       <header class="header">
         <div class="header_bar row">
           <h1 class="grid-1"><a href="/">LWOT　I leave work on time.</a></h1>
-          <% if patient_signed_in? %>
+          <% if patient_signed_in? %>   
             <div class="user_nav grid-1">
-              <%= link_to destroy_patient_session_path, method: :delete, class: "post" do %>
-                ログアウト
-              <% end %>
-              <%= link_to new_nurse_session_path, class: "post" do %>
-                看護師様は<br>こちら
-              <% end %>
+              <div class="login_patient_name">
+                <%= "#{current_patient.name}様" %>
+              </div>
+                <%= link_to destroy_patient_session_path, method: :delete, class: "post" do %>
+                  ログアウト
+                <% end %>
+                <%= link_to new_nurse_session_path, class: "post" do %>
+                  看護師様は<br>こちら
+                <% end %>
             </div>
           <% elsif nurse_signed_in? %>
             <div class="user_nav grid-1">
+              <div class="login_nurse_name">
+               <%= "#{current_nurse.name}様" %>
+              </div>
               <%= link_to new_patient_session_path, class: "post" do %>
                 患者様は<br>こちら
               <% end %>
@@ -41,6 +47,7 @@
               <%= link_to new_nurse_session_path, class: "post" do %>
                 看護師様は<br>こちら
               <% end %>
+            </div>
           <% end %>
         </div>
       </header>
