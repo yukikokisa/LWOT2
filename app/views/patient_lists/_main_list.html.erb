@@ -1,2 +1,31 @@
 <div id="list">
+  <div class="list_contents">
+    <div class="list_content_title">
+       <h1>相談内容一覧</h1>
+    </div>
+    <div class="list_table">
+      <table border="4" width="90%" >
+        <thead>
+          <tr height="40">
+            <th width="15%">名前</th>
+            <th width="15%">部屋番号</th>
+            <th width="15%">担当医</th>
+            <th width="15%">相談内容</th>
+            <th width="30%">詳細</th>
+          </tr>
+        </thead>
+        <% @patients.each do |patient| %>
+        <tbody>
+          <tr height="50">
+            <td><%= patient.name %></td>
+            <td><%= patient.room_number %></td>
+            <td><%= patient.doctor %></td>
+            <td><%= @consultant %></td>
+            <td><%= @detail %></td>
+          </tr>
+        </tbody>
+        <% end %>
+      </table>
+    </div>
+  </div>
 </div> 

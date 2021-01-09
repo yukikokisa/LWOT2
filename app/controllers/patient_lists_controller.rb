@@ -7,6 +7,7 @@ class PatientListsController < ApplicationController
     @time =time.strftime("#{ampm} %I:%M")
     @patient_list = PatientList.new
     @patients = Patient.all.order(:name)
+    @consultant = Symptom.find(params[:patient_id])
   end
 
   def new

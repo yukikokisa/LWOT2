@@ -49,34 +49,40 @@
 /*======================================================*/
 /*create*/
 /*======================================================*/
-
 .create_contents{
-  padding-top: 200px;
-  padding-bottom: 200px;
+  height: 100vh;
+  padding: 100px;
   font-size: 25px;
 }
 
-.create_title {
-  padding-left: 300px;
-  position: relative;
-  justify-content: center;
+.create_content {
+  padding-top: 20px;
 }
 
-.comment-1 {
-  padding-top: 30px;
-  padding-left: 300px;
-  justify-content: center;
+.comments {
+  
 }
 
-.comment-2 {
-   padding-top: 30px;
-   padding-left: 300px;
-   justify-content: center;
+.create-btn {
+  padding-top: 20px;
 }
 
-.top {
-  font-family: "Yu Gothic", YuGothic, Verdana, 'Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, sans-serif;
+.btn {
+  border: 2px solid #696969;
+  border-radius: 6px;
+  background-color: #fafdff;
+  padding: 20px;
   text-align: center;
-  padding-top: 40px;
+  color: #000080;
+  width: 150px;
+  box-shadow: 2px 2px 3px 1px #666;
+  -moz-box-shadow: 2px 2px 3px 1px #666;
+  -webkit-box-shadow: 2px 2px 3px 1px #666;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #000080;
+  color: #fff;
 }
 
