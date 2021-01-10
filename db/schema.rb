@@ -12,24 +12,6 @@
 
 ActiveRecord::Schema.define(version: 2021_01_04_092150) do
 
-  create_table "checkups", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.bigint "patient_id", null: false
-    t.integer "consultation_content_id"
-    t.text "detail"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["patient_id"], name: "index_checkups_on_patient_id"
-  end
-
-  create_table "medical_treatments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.bigint "patient_id", null: false
-    t.integer "treatment_content_id"
-    t.text "text"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["patient_id"], name: "index_medical_treatments_on_patient_id"
-  end
-
   create_table "nurses", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", null: false
     t.string "employee_number", null: false
@@ -44,6 +26,7 @@ ActiveRecord::Schema.define(version: 2021_01_04_092150) do
 
   create_table "patient_lists", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.bigint "patient_id", null: false
+    t.string "list"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["patient_id"], name: "index_patient_lists_on_patient_id"
@@ -64,22 +47,16 @@ ActiveRecord::Schema.define(version: 2021_01_04_092150) do
   end
 
   create_table "questions", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "symptoms", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.bigint "patient_id", null: false
-    t.date "oneset_time"
-    t.string "body_region"
-    t.text "condition"
+    t.integer "consultation_content_id"
+    t.date "date"
+    t.string "subject"
+    t.text "detail"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["patient_id"], name: "index_symptoms_on_patient_id"
+    t.index ["patient_id"], name: "index_questions_on_patient_id"
   end
 
-  add_foreign_key "checkups", "patients"
-  add_foreign_key "medical_treatments", "patients"
   add_foreign_key "patient_lists", "patients"
-  add_foreign_key "symptoms", "patients"
+  add_foreign_key "questions", "patients"
 end

@@ -1,4 +1,5 @@
 class PatientList < ApplicationRecord
-  has_many :patient
+  has_many :patients
+  
   validates :list, presence: true
 end

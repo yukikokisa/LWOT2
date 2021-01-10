@@ -1,9 +1,12 @@
  <div class="question_contents">
+  <div class="date_time">
+    <%= render "date_time" %>
+  </div>
   <div class="question_content"> 
-　　<div class="title">
+   <div class="title">
      <h1>Q.本日、看護師に相談したいことがありますか？</h1>
    </div>
-   <div class="questions">
+    <div class="questions">
      <div class="question_items">
        <div class="question_item">
         <%= link_to questions_path, method: :post, class: "question_item" do %>
@@ -11,21 +14,11 @@
         <% end %>
        </div>
        <div class="question_item">
-        <%= link_to new_checkup_path, class: "question_item" do %>
-            検査のついて
+        <%= link_to  new_question_path, class: "question_item" do %>
+            あり
         <% end %>
        </div>
-       <div class="question_item">
-        <%= link_to new_symptom_path, class: "question_item" do %>
-            症状について 
-        <% end %>
-       </div>
-       <div class="question_item">
-        <%= link_to  new_medical_treatment_path, class: "question_item" do %>
-            治療について
-        <% end %>
-       </div>
-   　</div>
+    </div>
    </div>
   </div>
  </div>
