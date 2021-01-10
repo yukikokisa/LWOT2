@@ -6,10 +6,7 @@
   <div class="medical_items">
    <%= form_with model: @checkup, local: true do |f| %>
      <div class = "item-1">
-     　 <div class="i_line_fix">相談内容</div> 
-        <div class="field">
-          <%= f.collection_select(:consultation_content_id, ConsultationContent.all, :id, :name, {}, {class:"consultation_content_id"}) %>
-        </div> 
+     　 
      </div>
      <div class = "item-2">
         <div class="i_line_fix">相談内容</div> 

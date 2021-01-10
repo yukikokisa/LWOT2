@@ -9,7 +9,7 @@
        <h2>患者一覧</h2>
      </div>
      <div class="patient_list">
-       <%= form_with model: @patient_list, local: true do |f| %>
+       <%= form_with model: @patient_list, url: patient_lists_path, local: true do |f| %>
          <% @patients.each do |patient| %>
            <div class="patient">
              <ul>
@@ -17,9 +17,9 @@
              </ul>
            </div>
          <% end %>
-        <div class="checkup_content-submit">
-          <%= f.submit "確認する" , class:"btn" %>
-        </div>
+          <div class="checkup_content-submit">
+            <%= f.submit "確認する" , class:"btn" %>
+         </div>
        <% end %>
       </div>   
    </div>
