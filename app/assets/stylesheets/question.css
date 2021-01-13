@@ -8,16 +8,19 @@
 
 .date_time {
   padding-top: 10px;
-  padding-right: 10px;
+  padding-right: 60px;
   float: right;
   font-size: 20px;
 }
 
-.title {
- font-size: 25px;
+.title  {
  display: flex;
  justify-content: center;
 } 
+
+h1 {
+  font-size: 25px;
+}
 
 .questions {
   font-size: 50px;

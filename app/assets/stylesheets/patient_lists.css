@@ -5,7 +5,6 @@
 .side_bar {
   background-color: #FFFFFF;
   width: 300px;
-  height: calc(100vh - 100px);
 }
 
 .side-bar-header {

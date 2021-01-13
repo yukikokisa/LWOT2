@@ -56,6 +56,7 @@ header.header {
 .header_bar.row h1.grid-1 a {
   text-decoration: none;
   color: #fafdff;
+  justify-content: center;
 }
 
 .user_nav.grid-1 {
