@@ -24,7 +24,7 @@ Things you may want to cover:
 * ...
 
 # LWOT2 (I leave work on time2)
-We have created an app that reduces the workload of nurses.
+「看護師」の「業務効率を上げる」ためのアプリです。
 
 # Description
 私は看護師をしています。
@@ -36,7 +36,10 @@ We have created an app that reduces the workload of nurses.
 事前に伝えておくことが出来て、聞き漏らすことがない。
 お互いハッピーになれるかと思います。
 アプリ名は「私定時で帰ります」と少し患者さんへの配慮にはかけますが、頑張る白衣の天使を助けたかったので作りました。
-駆け出しの看護師×エンジニアとして、医療に貢献できたら光栄です。
+また、アプリ名が２になっているのは、技術力不足からデーターベースエラーが解けず、再度作り直しとなってしまった背景からでした。
+駆け出しですが、看護師×エンジニアとして、医療に貢献できたら光栄です。
+
+
 
 # テーブル設計
 
