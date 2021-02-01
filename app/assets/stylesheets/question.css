@@ -132,10 +132,14 @@ h2 {
 
 .create_content {
   padding-top: 20px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
 }
 
 .create-btn {
-  padding-top: 20px;
+  padding-top: 60px;
 }
 
 .btn {
