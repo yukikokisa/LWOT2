@@ -2,12 +2,9 @@
 <h2 align="center">LWOT2</h2>
 
 <p align="center">
-  <a href="nurse"><img width="150" alt="スクリーンショット 2021-01-30 18 06 00" src="https://user-images.githubusercontent.com/70472160/106352372-e0b79700-6325-11eb-9d1e-6a3b78e208ce.png" width="40px">
-</a>
+  <a href="nurse"><img width="150" alt="スクリーンショット 2021-01-30 18 06 00" src="https://user-images.githubusercontent.com/70472160/106352372-e0b79700-6325-11eb-9d1e-6a3b78e208ce.png" width="40px"></a>
   <br>
-
   <a href="https://jp.heroku.com/"><img src="https://user-images.githubusercontent.com/70472160/106438079-5738ce00-64b9-11eb-8251-c2e29326117c.jpg" height="45px;" /></a>
-
   <a href="https://www.ruby-lang.org/ja/"><img src="https://user-images.githubusercontent.com/70472160/106448554-4478c600-64c6-11eb-84af-c4061098de34.jpg" height="45px;" /></a>
   <a href="https://railsguides.jp/getting_started.html"><img src="https://user-images.githubusercontent.com/70472160/106448561-4773b680-64c6-11eb-8a1a-1f7c8777659e.png" height="40px;" /></a>
 </p>
@@ -16,8 +13,6 @@
 「看護師」の「業務効率を上げる」ためのアプリです。
 
 ## Description
-<
-
 私は看護師をしています。<br>
 看護師は「白衣の天使」と言われていますが、日々の患者さんのニーズに応えながら、医療過誤をしないというプレッシャーに耐えるのは心身ともに負担です。<br>
 そんな中、就業時間を超えての勤務は更に負担となります。<br>
