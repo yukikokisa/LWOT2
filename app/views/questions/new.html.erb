@@ -1,7 +1,7 @@
 <div class="question_new_contents">
  <div class="question_new_content">  
     <div class="question_new_content_title">
-     <h2>相談内容について<br>教えて下さい</h2>
+     <h2>本日看護師に<br>相談したい内容</h2>
     </div> 
     <div class="question_items">
     <%= form_with model: @question, url: questions_path, local: true do |f| %>
@@ -15,9 +15,9 @@
         </div> 
       </div> 
       <div class = "item-2">
-        <div class="i_line_fix">時期<br>（検査日や発症日を入力）</div> 
+        <div class="i_line_fix"><p>時期<br>（検査日や発症日を入力）</p></div> 
         <div class="field">
-          <%= f.date_field :date, size: "10x30", class: 'form-control'%>
+          <%= f.date_field :date, size: "20x30", class: 'form-control'%>
       </div>
       </div>
       <div class = "item-3">
@@ -29,7 +29,7 @@
       <div class = "item-4">
           <div class="i_line_fix">詳細</div>
           <div class="field">
-            <%= f.text_area :detail, size: "40x10", class:"detail", placeholder:"例）腫れている、検査は何時から？退院時期はいつか" %>
+            <%= f.text_area :detail, size: "45x10", class:"detail", placeholder:"例）腫れている、検査は何時から？退院時期はいつか" %>
           </div>
       </div>
       <div class="question_content-submit">

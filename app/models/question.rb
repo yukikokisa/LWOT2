@@ -4,9 +4,7 @@ class Question < ApplicationRecord
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to :consultation_content
 
-  with_options presence: true do
-    validates :consultation_content_id,  numericality: { other_than: 1 } 
-    validates :subject,      length: { maximum: 30 }
-    validates :detail,       length: { maximum: 200 }
-  end
+  validates :consultation_content_id,  numericality: { other_than: 1 }, presence: true
+  validates :subject,      length: { maximum: 30 }
+  validates :detail,       length: { maximum: 200 }
 end
