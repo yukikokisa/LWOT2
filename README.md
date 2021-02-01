@@ -1,9 +1,10 @@
-<div style="text-align: center;">
 <img width="1245" alt="スクリーンショット 2021-01-30 17 32 46" src="https://user-images.githubusercontent.com/70472160/106351737-3c335600-6321-11eb-848f-6a400b2c3e90.png">
-LWOT2
-<img width="297" alt="スクリーンショット 2021-01-30 18 06 00" src="https://user-images.githubusercontent.com/70472160/106352372-e0b79700-6325-11eb-9d1e-6a3b78e208ce.png">
+<h2 align="center">LWOT2</h2>
 
-</div>
+<p align="center">
+<img width="297" alt="スクリーンショット 2021-01-30 18 06 00" src="https://user-images.githubusercontent.com/70472160/106352372-e0b79700-6325-11eb-9d1e-6a3b78e208ce.png" width="80px">
+
+
 
 ## LWOT2 (I leave work on time2)
 「看護師」の「業務効率を上げる」ためのアプリです。
