@@ -93,6 +93,10 @@ h1 {
 h2 {
   font-size: 25px;
 }
+
+.i_line_fi p {
+  font-size: 25px;
+}
   
  input[type="text"] {
   width: 340px;
