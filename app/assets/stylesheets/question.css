@@ -22,16 +22,15 @@ h1 {
   font-size: 25px;
 }
 
-.questions {
+.question {
   font-size: 50px;
   padding-top: 30px;
   padding-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.question_items {
-  display: flex;
-  justify-content: space-around;
-}
 
 .i_line_fix {
   border-left: thick solid #696969;
