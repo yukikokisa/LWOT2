@@ -2,12 +2,15 @@
 <div class="question_contents">
   <div class="question_content"> 
    <div class="title">
-     <h1></h1>
+     <h2>今日看護師と話したいことを教えてください</h2>
    </div>
     <div class="question">
        <div class="question_item">
         <%= link_to  new_question_path, class: "question_item" do %>
-                   <br>今日の<br>相談内容を<br>投稿する<br>        <br>
+        <%= button_tag type: "submit", class: "btn btn-default btn-s-md" do %>
+            <i class="fas fa-user-nurse fa-3x"></i>
+            <i class="fas fa-paper-plane fa-3x"></i>
+        <% end %>
         <% end %>
        </div>
     </div>

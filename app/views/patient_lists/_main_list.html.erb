@@ -1,13 +1,11 @@
 <div id="list">
   <div class="list_contents">
-    <div class="list_content_title">
-       <h1>相談内容一覧</h1>
-    </div>
     <div class="list_table">
+    <h1>相談内容一覧</h1>
       <table border="4" width="95%" >
         <thead>
           <tr height="40">
-            <th width="15%">名前</th>
+            <th align="center" valign="middle" width="15%">名前</th>
             <th width="9%">部屋番号</th>
             <th width="10%">担当医</th>
             <th width="9%">相談内容</th>
@@ -16,11 +14,10 @@
             <th width="30%">詳細</th>
           </tr>
         </thead>
-            
         <tbody>
           <% @questions.each do |question| %>
-           <tr height="50">           
-              <td><%= question.patient.name %></td>
+           <tr align="center" valign="middle" height="50">           
+              <td ><%= question.patient.name %></td>
               <td><%= question.patient.room_number %></td>
               <td><%= question.patient.doctor %></td>
               <td><%= question.consultation_content.name %></td>
