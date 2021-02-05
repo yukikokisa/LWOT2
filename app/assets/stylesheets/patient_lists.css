@@ -1,16 +1,15 @@
+/*======================================================*/
+/*index*/
+/*======================================================*/
 .patient_list_contents {
+  height: 100vh;
+  width: 100vw;
   display: flex;
 }
 
-.side_bar {
+.side {
   background-color: #FFFFFF;
   width: 300px;
-}
-
-
-.v_line_fix {
-  width: 3px;
-  background-color: #696969;
 }
 
 .main {
@@ -18,8 +17,20 @@
   width: calc(100vw - 300px);
 }
 
+/*======================================================*/
+/*side_bar*/
+/*======================================================*/
+
+.v_line_fix {
+  width: 3px;
+  background-color: #696969;
+}
+
 .side-bar-header {
   height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .date {
@@ -33,11 +44,6 @@
 .patient_list_room {
   background-color: #FFFFFF;
   height: calc(100vh - 100px);
-}
-
-.patient_lists_title {
-  height: 50px;
-  background-color: #FFFFFF
 }
 
 .title-border {
@@ -64,6 +70,20 @@
 label, input[type='checkbox'] {
   cursor: pointer;
 }
+
+.patient_list {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.checkup_content-submit {
+  padding-top: 30px;
+}
+
+/*======================================================*/
+/*main_bar*/
+/*======================================================*/
 
 .list_table {
   padding-top: 40px;
