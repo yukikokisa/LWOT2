@@ -1,4 +1,4 @@
-<img width="1316" alt="投稿一覧" src="https://user-images.githubusercontent.com/70472160/107138753-80de7300-6959-11eb-9030-41088f3e7782.gif">
+<img width="1316" alt="投稿一覧" src="https://user-images.githubusercontent.com/70472160/107138853-6bb61400-695a-11eb-8140-48abff5ed3b9.gif">
 <img width="1316" alt="投稿一覧" src="https://user-images.githubusercontent.com/70472160/107137521-c64a7280-6950-11eb-99da-6dc2aa1b08bf.png">
 <h2 align="center">LWOT2</h2>
 
