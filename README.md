@@ -10,7 +10,7 @@
   <a href="https://jp.heroku.com/"><img src="https://user-images.githubusercontent.com/70472160/106450392-78ed8180-64c8-11eb-9ac9-28bb0553c837.png" height="70px;" /></a>
   <a href="https://www.ruby-lang.org/ja/"><img src="https://user-images.githubusercontent.com/70472160/106448554-4478c600-64c6-11eb-84af-c4061098de34.jpg" height="70px;" /></a>
   <a href="https://railsguides.jp/getting_started.html"><img src="https://user-images.githubusercontent.com/70472160/106448561-4773b680-64c6-11eb-8a1a-1f7c8777659e.png" height="70px;" /></a>
-  <a href="https://railsguides.jp/getting_started.html"><img src="https://user-images.githubusercontent.com/70472160/107140863-7e374a00-6968-11eb-8b82-2082e2e1a60e.png" width="20px;" /></a>
+  <a href="https://railsguides.jp/getting_started.html"><img src="https://user-images.githubusercontent.com/70472160/107140863-7e374a00-6968-11eb-8b82-2082e2e1a60e.png" width="180px;" /></a>
 </p>
 
 ## LWOT2
