@@ -12,8 +12,8 @@
   <a href="https://railsguides.jp/getting_started.html"><img src="https://user-images.githubusercontent.com/70472160/106448561-4773b680-64c6-11eb-8a1a-1f7c8777659e.png" height="70px;" /></a>
 </p>
 
-## LWOT2 (I leave work on time2)
-「看護師」の「業務効率を上げる」ためのアプリです。
+## App URL
+   https://lwot2.herokuapp.com/
 
 ## Description
 私は看護師をしています。<br>
@@ -30,8 +30,7 @@
 また、アプリ名が２になっているのは、技術力不足からデーターベースエラーが解けず、再度作り直しとなってしまった背景からでした。<br>
 駆け出しですが、看護師×エンジニアとして、医療に貢献できたら光栄です。<br>
 
-## App URL
-   https://lwot2.herokuapp.com/
+
 
 ## 工夫したポイント
 
