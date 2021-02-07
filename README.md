@@ -1,4 +1,4 @@
-<img width="1316" alt="投稿一覧" src="https://user-images.githubusercontent.com/70472160/107139502-eb45e200-695e-11eb-8231-51b661b3ced4.gif">
+<img width="1316" alt="投稿一覧" src="https://user-images.githubusercontent.com/70472160/107139548-4e377900-695f-11eb-8b2d-414a324a4ec0.gif">
 
 <img width="1316" alt="投稿一覧" src="https://user-images.githubusercontent.com/70472160/107138853-6bb61400-695a-11eb-8140-48abff5ed3b9.gif">
 
