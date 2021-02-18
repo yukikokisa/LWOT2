@@ -8,12 +8,12 @@
     <div class="account-page__inner--right user-form">
       <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
         <div class="field">
-          <%= f.label :room_number %><br />
+          <%= f.label :部屋番号（例）２０１−１（半角数字） %><br />
           <%= f.text_field :room_number, autofocus: true, autocomplete: "room_number" %>
         </div>
 
         <div class="field">
-          <%= f.label :password %><br />
+          <%= f.label :password（６文字以上の半角英数）%><br />
           <%= f.password_field :password, autocomplete: "current-password" %>
         </div>
 
