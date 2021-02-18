@@ -21,11 +21,11 @@
 
    ログイン情報（テスト用）<br>
    ＜患者用＞<br>
-   ・room number: 301<br>
-   ・password: 1234test<br>
+     ・room number: 301<br>
+     ・password: 1234test<br>
    ＜看護師用＞<br>
-   ・社員番号: 87654321<br>
-   ・password: 1234test<br>
+     ・社員番号: 87654321<br>
+     ・password: 1234test<br>
 
 ## Description
 私は看護師をしています。<br>
