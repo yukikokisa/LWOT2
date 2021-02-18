@@ -14,7 +14,7 @@ class Patient < ApplicationRecord
   with_options presence: true do
     validates :name,         length: { maximum: 10 }, format: { with: /\A[ぁ-んァ-ン一-龥]/ }
     validates :doctor,       format: { with: /\A[ぁ-んァ-ン一-龥]/ }
-    validates :room_number,  format: { with: /\A[0-9]+\z/ }
+    validates :room_number,  format: /\A\d{3}[-]\d{1}\z/
   end
 
   def email_required?
