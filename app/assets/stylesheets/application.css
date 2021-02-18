@@ -24,9 +24,14 @@ html body {
 }
 
 .wrapper{
-  min-height: 100vh;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
 }
+
+/* スマートフォン表示時 */
+@media (max-width: 599px) {
+
+ }
 
 /*======================================================*/
 /*ヘッダー*/
@@ -101,8 +106,8 @@ header.header {
 /*フッター*/
 /*======================================================*/
 footer {
-  width: 100%;
-  padding: 20px;
+  width: 100vw;
+  padding: 20px 0 20px 0;
   background-color: #000080;
   position: absolute;
   bottom: 0;
