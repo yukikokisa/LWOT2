@@ -19,6 +19,14 @@
 ## App URL
    https://lwot2.herokuapp.com/
 
+   ログイン情報（テスト用）
+   ＜患者用＞
+   ・room number: 301
+   ・password: 1234test
+   ＜看護師用＞
+   ・社員番号: 87654321
+   ・password: 1234test
+   
 ## Description
 私は看護師をしています。<br>
 看護師は「白衣の天使」と言われていますが、日々の患者さんのニーズに応えながら、医療過誤をしないというプレッシャーに耐えるのは心身ともに負担です。<br>
