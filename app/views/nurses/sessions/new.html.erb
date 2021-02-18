@@ -8,12 +8,12 @@
     <div class="account-page__inner--right user-form">
       <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
           <div class="field">
-            <%= f.label :社員番号%><br />
+            <%= f.label :社員番号（8桁の番号を入力） %><br />
             <%= f.text_field :employee_number, autofocus: true, autocomplete: "employee_number" %>
           </div>
 
           <div class="field">
-            <%= f.label :password %><br />
+            <%= f.label :パスワード（英数6文字以上） %><br />
             <%= f.password_field :password, autocomplete: "current-password" %>
           </div>
 
