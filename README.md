@@ -11,6 +11,8 @@
   <a href="https://www.ruby-lang.org/ja/"><img src="https://user-images.githubusercontent.com/70472160/106448554-4478c600-64c6-11eb-84af-c4061098de34.jpg" height="70px;" /></a>
   <a href="https://railsguides.jp/getting_started.html"><img src="https://user-images.githubusercontent.com/70472160/106448561-4773b680-64c6-11eb-8a1a-1f7c8777659e.png" height="70px;" /></a>
   <a href="https://railsguides.jp/getting_started.html"><img src="https://user-images.githubusercontent.com/70472160/107140863-7e374a00-6968-11eb-8b82-2082e2e1a60e.png" width="150px;" /></a>
+  <a href=""><img src="https://user-images.githubusercontent.com/70472160/108345722-f67ff400-7221-11eb-9045-3e566308f50a.png" width="150px;" /></a>
+  <a href=""><img src="https://user-images.githubusercontent.com/70472160/108346182-7908b380-7222-11eb-80fc-8751a9323592.jpeg" width="150px;" /></a>
 </p>
 
 ## LWOT2
