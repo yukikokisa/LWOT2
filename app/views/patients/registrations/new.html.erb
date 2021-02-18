@@ -3,13 +3,13 @@
     <div class="account-page__inner--left account-page__header">
       <h2>Create Account</h2>
       <h5>新規アカウントの作成</h5>
-  　 　<%= render "devise/shared/links" %>
+        <%= render "devise/shared/links" %>
     </div>
     <div class="account-page__inner--right user-form">
       <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
         <%= render "devise/shared/error_messages", resource: resource %>
         <div class="field">
-          <%= f.label :氏名 %><br />
+          <%= f.label :氏名（例）山田　太郎%><br />
           <%= f.text_field :name, autofocus: true, autocomplete: "name" %>
         </div>
         <div class="field">
@@ -17,7 +17,7 @@
          <%= f.text_field :doctor, autofocus: true, autocomplete: "doctor" %>
         </div>
         <div class="field">
-           <%= f.label :部屋番号 %><br />
+           <%= f.label :部屋番号（例）２０１−１（半角数字） %><br />
            <%= f.text_field :room_number, autofocus: true, autocomplete: "room_number" %>
         </div>
         <div class="field">
@@ -31,8 +31,11 @@
            <%= f.label :password_confirmation %><br />
            <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
         </div>
-        <div class="actions">
-           <%= f.submit "Sign up" %>
+        <div class="">
+          <%= button_tag type: "submit", class: "btn btn-default btn-s-md" do %>
+            <i class="fas fa-user-nurse fa-3x"></i>
+            <i class="fas fa-paper-plane fa-3x"></i>
+          <% end %>
         </div>
       <% end %> 
      </div>
